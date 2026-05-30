@@ -107,7 +107,7 @@ app.use((err, req, res, next) => {
 
 if (require.main === module) {
   app.listen(8080, () => {
-    console.log("Server is listening to port 8080");o
+    console.log("Server is listening to port 8080");
   });
 }
 //for deployment

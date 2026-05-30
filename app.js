@@ -1,7 +1,7 @@
 if (process.env.NODE_ENV != "production") {
   require("dotenv").config();
 }
-
+const { cloudinary } = require("./cloudConfig");
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");

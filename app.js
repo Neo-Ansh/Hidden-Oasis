@@ -107,8 +107,19 @@ app.use((err, req, res, next) => {
 
 if (require.main === module) {
   app.listen(8080, () => {
-    console.log("Server is listening to port 8080");
+    console.log("Server is listening to port 8080");o
   });
 }
+//for deployment
+const { cloudinary } = require("./cloudConfig");
 
+app.get("/cloud-test", async (req, res) => {
+  try {
+    const result = await cloudinary.api.ping();
+    res.send(result);
+  } catch (err) {
+    console.error(err);
+    res.send(err.message);
+  }
+});
 module.exports = app;

@@ -111,8 +111,6 @@ if (require.main === module) {
   });
 }
 //for deployment
-const { cloudinary } = require("./cloudConfig");
-
 app.get("/cloud-test", async (req, res) => {
   try {
     const result = await cloudinary.api.ping();

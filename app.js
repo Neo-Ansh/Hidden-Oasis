@@ -23,6 +23,9 @@ const userRouter = require("./routes/user.js");
 const dbUrl = process.env.ATLASDB_URL;
 
 async function main() {
+  console.log("NODE_ENV =", process.env.NODE_ENV);
+  console.log("DB URL =", process.env.ATLASDB_URL);
+  console.log("SECRET =", process.env.SECRET ? "Loaded" : "Missing");
   await mongoose.connect(dbUrl);
 }
 
@@ -45,7 +48,7 @@ app.engine("ejs", ejsMate);
 
 const store = MongoStore.create({
   mongoUrl: dbUrl,
-  crypto: {
+  crypto: {  
     secret: process.env.SECRET,
   },
   touchAfter: 24 * 3600,

@@ -1,6 +1,6 @@
 # WanderLust
 
-WanderLust​‍​‌‍​‍‌​‍​‌‍​‍‌ is a full-stack web application inspired from Airbnb. It is an online platform that allows users to post listings for their homes in the case of a short vacation stay, browse and read the details of different properties, and also write their opinions and give a rating to the accommodation. The app implements the MVC (Model-View-Controller) architecture and also has features like encrypted user login, user picture storage, and user-friendly ​‍​‌‍​‍‌​‍​‌‍​‍‌maps.
+WanderLust​‍​‌‍​‍‌​‍​‌‍​‍‌ is a full-stack web application. It is an online platform that allows users to post listings for their homes in the case of a short vacation stay, browse and read the details of different properties, and also write their opinions and give a rating to the accommodation. The app implements the MVC (Model-View-Controller) architecture and also has features like encrypted user login, user picture storage, and user-friendly ​‍​‌‍​‍‌​‍​‌‍​‍‌maps.
 
 **Live Project Link: [https://project-wanderlust-psi.vercel.app/listings](https://project-wanderlust-psi.vercel.app/listings)**
 
